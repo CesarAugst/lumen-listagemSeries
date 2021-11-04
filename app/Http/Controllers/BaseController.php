@@ -10,7 +10,8 @@ abstract class BaseController
 
     public function index(Request $request){
 //        $offset = ($request->page -1) * $request->per_page;
-
+        //exemplo para consumo
+        //http://localhost:8000/api/series?page=1&per_page=5
         return $this->classe::paginate($request->per_page);
     }
 
